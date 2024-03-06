@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  pizzahub.api:
+    container_name: pizzahub.api
+    image: pizzahub.api
+    build:
+      context: .
+      dockerfile: source/backend/Dockerfile
+    ports:
+      - "8080:80"
